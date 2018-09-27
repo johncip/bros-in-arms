@@ -1,0 +1,31 @@
+body {
+  background-color: black;
+  color: #aaa;
+  font-size: 36px;
+  font-family: Big Caslon, Palatino, serif;
+  width: 100%;
+  letter-spacing: 0.5px;
+}
+
+ul {
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: red;
+} 
+
+.outer {
+  max-width: 800px;
+  margin: auto;
+}
+
+.main {
+  white-space: pre-wrap;
+} 
