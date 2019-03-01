@@ -64,7 +64,7 @@ a:hover {
 /*
  * This puts the main content in a vertically-centered box.
  */
-.outer {
+.container {
   max-width: 800px;
   margin: auto;
 }
