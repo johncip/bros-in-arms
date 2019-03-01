@@ -50,7 +50,7 @@ a {
   color: var(--darkbronze);
   padding: 0 12px;
   text-decoration: none;
-  text-shadow: 1px 1px 0.5px black;
+  text-shadow: 0.8px 0.8px 0.5px black;
   font-weight: bold;
   
   border: 5px solid black;
