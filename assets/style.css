@@ -9,7 +9,7 @@
  */
 :root {
   --bronze: rgb(210, 90, 40);
-  --marshmallow: rgb(200, 200, 200);
+  --marshmallow: rgb(210, 210, 210);
   --darkbronze: rgb(210, 90, 40); 
   --darkocean: rgb(8, 10, 15);
 }
@@ -19,14 +19,28 @@ body {
   margin: 0;
   color: var(--marshmallow);
   font: 28px "Laila", serif;
+  padding: 16px;
+  box-sizing: border-box;
 
   background-image: url("block-13.png");
   background-size: 60px;
   background-color: var(--darkocean);
 }
 
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 72px;
+  text-shadow: 2px 2px 1px gray;
+}
+
 main {
   white-space: pre-wrap;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 32px;
 } 
 
 /*
