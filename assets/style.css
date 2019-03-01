@@ -25,6 +25,10 @@ body {
   background-color: var(--darkocean);
 }
 
+main {
+  white-space: pre-wrap;
+} 
+
 /*
  * These two sections turn the bulleted list into a centered group of inline blocks.
  */ 
@@ -68,7 +72,3 @@ a:hover {
   max-width: 800px;
   margin: auto;
 }
-
-.main {
-  white-space: pre-wrap;
-} 
