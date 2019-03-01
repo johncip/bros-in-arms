@@ -11,17 +11,18 @@
   --bronze: rgb(210, 90, 40);
   --marshmallow: rgb(200, 200, 200);
   --darkbronze: rgb(210, 90, 40); 
-  --darkocean: rgb(10, 15, 20);
+  --darkocean: rgb(8, 10, 15);
 }
 
 body {
+  width: 100%;
+  margin: 0;
   color: var(--marshmallow);
   font: 28px "Laila", serif;
-  width: 100%;
+
   background-image: url("block-13.png");
-  background-size: 40px;
+  background-size: 60px;
   background-color: var(--darkocean);
-  margin: 0;
 }
 
 /*
@@ -43,9 +44,9 @@ li {
 a {
   background-color: rgb(247, 160, 64);
   color: var(--darkbronze);
-  padding: 0 8px;
+  padding: 0 12px;
   text-decoration: none;
-  text-shadow: 1.5px 1.5px 0.5px black;
+  text-shadow: 1px 1px 0.5px black;
   font-weight: bold;
   
   border: 5px solid black;
