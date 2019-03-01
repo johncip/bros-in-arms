@@ -1,26 +1,68 @@
+/*
+ * This imports a font from Google Fonts.
+ */
+@import url('https://fonts.googleapis.com/css?family=Laila');
+
+/*
+ * This section creates some color values that can be referred to by name.
+ * It's just for readability -- using the color values directly also works fine.
+ */
+:root {
+  --bronze: rgb(210, 90, 40);
+  --marshmallow: rgb(200, 200, 200);
+  --darkbronze: rgb(210, 90, 40); 
+  --darkocean: rgb(10, 15, 20);
+}
+
 body {
-  background-color: black;
-  color: #aaa;
-  font-size: 36px;
-  font-family: Big Caslon, Palatino, serif;
+  color: var(--marshmallow);
+  font: 28px "Laila", serif;
   width: 100%;
-  letter-spacing: 0.5px;
+  background-image: url("block-13.png");
+  background-size: 40px;
+  background-color: var(--darkocean);
+  margin: 0;
 }
 
+/*
+ * These two sections turn the bulleted list into a centered group of inline blocks.
+ */ 
 ul {
-  color: white;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
 }
 
+li {
+  display: inline-block;
+}
+
+/*
+ * This section makes the links look like bronze buttons.
+ */ 
 a {
-  color: white;
+  background-color: rgb(247, 160, 64);
+  color: var(--darkbronze);
+  padding: 0 8px;
   text-decoration: none;
+  text-shadow: 1.5px 1.5px 0.5px black;
   font-weight: bold;
+  
+  border: 5px solid black;
+  border-left-color: var(--darkbronze);
+  border-top-color: var(--darkbronze);
 }
 
+/*
+ * The links will get lighter when the mouse is over them.
+ */ 
 a:hover {
-  color: red;
+  filter: brightness(120%);
 } 
 
+/*
+ * This puts the main content in a vertically-centered box.
+ */
 .outer {
   max-width: 800px;
   margin: auto;
