@@ -1,43 +1,40 @@
 <html>
   <head>
-    <!--
-      Below this comment is a link tag. We're using it to include an external stylesheet. We could also use a <style> tag, or inline styles, but since the style will be the same on every page, doing it this way means we don't have to repeat ourselves.
-    -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-
     <title>Brothers in Arms</title>
-
+    <!--
+      Below this comment is a link tag. We're using it to include an external stylesheet.
+      We could also use a <style> tag, or inline styles, but since the styles will be the same
+      on every page, doing it this way means we don't have to repeat ourselves.
+    -->
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
   </head>
   <body>
 
-    <!--
-      This div is styled in the style. file with the entry ".outer".
-      Classes start with a dot. They can be reused anywhere in the file, and they will get the same style applied.
-    -->
+    <!-- This div is styled in the style.css file with the entry ".outer".  -->
     <div class="outer">
 
       <!--
-        The following section is styled with "white-space: pre-wrap", which means that unlike in the rest of the HTML document, whitespace is significant. I did this so that I could avoid using <p> tags, but usually <p> tags are what you want.
+        This is styled with "white-space: pre-wrap", which means that unlike in the rest of the
+          document, line breaks in the source code will be rendered by the browser.
       -->
       <section class="main">
-You inch slowly through a narrow sewer duct, on your stomach, your bruised elbows dragging the rest of your stocky body forward.
+You're inching slowly through a sewer pipe, on your stomach, dragging yourself forward on bruised and bleeding elbows.
 
-You can't see, and you aren't sure you're going the right way. You're bleeding, achy, hungry, and you smell like excrement.
+You can't see, and don't know if you're going the right way. You're tired and hungry and you smell like crap.
 
-The urge to give up suddenly becomes overwhelming&mdash;your death would hurt the resistance, but at least then you could rest.
+The urge to give up is overwhelming&mdash;your death would hurt the resistance, but at least then you could rest.
       </section>
 
-      <!--
-        Notice that the page is broken up into <section>s.
-      -->
+      <!-- The page is broken up with <section> tags. -->
       <section class="actions">
 
         <!--
-          <ul> is an "unordered" list. Typically, the items (<li>s) of an unordered list have bullet points, and the items of an ordered list (<ol>) have numbers.
+          This is an unordered list. The list items (<li> tags) typically start with bullets.
+          Here it's restyled (in style.css) to look like a row of buttons.
         -->
         <ul>
           <li><a href="2.html">Give up</a></li>
-          <li><a href="3.html">Think of Lou</a></li>
+          <li><a href="3.html">Think of Lu</a></li>
         </ul>
 
       </section>
