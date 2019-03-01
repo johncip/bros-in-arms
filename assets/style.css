@@ -15,16 +15,21 @@
 }
 
 body {
-  width: 100%;
+  box-sizing: border-box;
   margin: 0;
+  padding: 16px;
   color: var(--marshmallow);
   font: 28px "Laila", serif;
-  padding: 16px;
-  box-sizing: border-box;
 
   background-image: url("block-13.png");
   background-size: 60px;
   background-color: var(--darkocean);
+  
+  /* this lets us vertically and horizontally center everything */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 h1 {
@@ -42,13 +47,12 @@ h2 {
 }
 
 main {
-  white-space: pre-wrap;
   background-color: rgba(0, 0, 0, 0.3);
   border: 1px solid black;
   border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 32px;
-} 
+  padding: 32px;
+  margin-bottom: 64px;
+}
 
 /*
  * These two sections turn the bulleted list into a centered group of inline blocks.
@@ -87,11 +91,22 @@ a:hover {
 } 
 
 /*
+ * Don't put space above the top <p> tag, or below the bottom one.
+ * It's easier to control the space by styling <main>.
+ */ 
+p:first-of-type {
+  margin-top: 0;
+}
+
+p:last-of-type {
+  margin-bottom: 0;
+}
+
+/*
  * This puts the main content in a vertically-centered box.
  */
 .container {
-  max-width: 800px;
-  margin: auto;
+  width: 800px;
 }
 
 .mushroom {
