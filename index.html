@@ -1,22 +1,50 @@
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
     <title>Bros. in Arms</title>
+
+    <!--
+      This link tag is being used to include an external stylsheet.
+      You could also use a <style> tag, or inline styles, but since the styles will be the same
+      on every page, doing it this way means I won't have to repeat myself.
+    -->
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+    <!--
+      This meta tag is being used to say that this file uses the "utf-8" character set. [2]
+
+      There are different ways of representing letters (etc.) as patterns of bits.
+      By saying which one our file uses, we avoid the possibility that the browser will
+      guess the wrong one.
+
+      You generally want utf-8. Also, utf-8 includes emoji 😃
+    -->
     <meta charset="utf-8">
   </head>
+
   <body>
+    <!--
+      This div is styled in the style.css file with the entry ".container".
+    -->
     <div class="container">
+
+      <!--
+        The main tag is used to describe the main content of the page. You're only
+        supposed to have one. It's also fine to not have one. It behaves like <div>.
+      -->
       <main>
         <h1>Bros. in Arms</h1>
         <h2>A weirdly familiar HTML adventure</h2>
       </main>
 
+      <!--
+        Section also behaves like <div>, but is useful for saying (in the code) that
+        this is a single group of content.
+      -->
       <section class="actions">
         <ul>
           <li><a href="pipe.html"><span class="emoji">🕹️</span> One Player Game</a></li>
         </ul>
       </section>
     </div>
-
   </body>
 </html>
