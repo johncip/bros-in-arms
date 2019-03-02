@@ -9,8 +9,9 @@
  */
 :root {
   --bronze: rgb(247, 160, 64);
-  --marshmallow: rgb(210, 210, 210);
+  --lightbronze: rgb(255, 190, 120);
   --darkbronze: rgb(210, 90, 40);
+  --marshmallow: rgb(210, 210, 210);
   --darkocean: rgb(8, 10, 15);
 }
 
@@ -101,7 +102,7 @@ p:last-of-type {
  * The "buttons" will get lighter when the mouse is over them.
  */
 .actions > a:hover {
-  filter: brightness(120%);
+  background-color: var(--lightbronze);
 }
 
 
