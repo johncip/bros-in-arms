@@ -55,42 +55,6 @@ main {
 }
 
 /*
- * These two sections turn the bulleted list into a centered group of inline blocks.
- */
-ul {
-  list-style-type: none;
-  padding: 0;
-  text-align: center;
-}
-
-li {
-  display: inline-block;
-}
-
-/*
- * This section makes the links look like bronze buttons.
- */
-a {
-  background-color: var(--bronze);
-  color: var(--darkbronze);
-  padding: 2px 12px;
-  text-decoration: none;
-  text-shadow: 0.8px 0.8px 0.5px black;
-  font-weight: bold;
-
-  border: 5px solid black;
-  border-left-color: var(--darkbronze);
-  border-top-color: var(--darkbronze);
-}
-
-/*
- * The links will get lighter when the mouse is over them.
- */
-a:hover {
-  filter: brightness(120%);
-}
-
-/*
  * Don't put space above the top <p> tag, or below the bottom one.
  * It's easier to control the space by styling <main>.
  */
@@ -108,6 +72,38 @@ p:last-of-type {
 .container {
   width: 800px;
 }
+
+.actions {
+  text-align: center;
+}
+
+/*
+ * This makes the links look like bronze buttons.
+ * The styling will only apply to <a> tags that are direct children
+ * of a tag with the "actions" class.
+ */
+.actions > a {
+  display: inline-block;
+
+  background-color: var(--bronze);
+  color: var(--darkbronze);
+  padding: 2px 12px;
+  text-decoration: none;
+  text-shadow: 0.8px 0.8px 0.5px black;
+  font-weight: bold;
+
+  border: 5px solid black;
+  border-left-color: var(--darkbronze);
+  border-top-color: var(--darkbronze);
+}
+
+/*
+ * The "buttons" will get lighter when the mouse is over them.
+ */
+.actions > a:hover {
+  filter: brightness(120%);
+}
+
 
 .emoji {
   position: relative;
