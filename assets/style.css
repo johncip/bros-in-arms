@@ -105,7 +105,9 @@ p:last-of-type {
   background-color: var(--lightbronze);
 }
 
-
+/*
+ * I needed to nudge the emojis down by 2px inside the buttons.
+ */
 .emoji {
   position: relative;
   top: 2px;
