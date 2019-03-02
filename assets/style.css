@@ -113,3 +113,10 @@ p:last-of-type {
   top: 2px;
   text-shadow: none;
 }
+
+.dedication {
+  font-size: 16px;
+  color: var(--marshmallow);
+  text-align: center;
+  padding-top: 40px;
+}
