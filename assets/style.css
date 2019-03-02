@@ -10,7 +10,7 @@
 :root {
   --bronze: rgb(247, 160, 64);
   --marshmallow: rgb(210, 210, 210);
-  --darkbronze: rgb(210, 90, 40); 
+  --darkbronze: rgb(210, 90, 40);
   --darkocean: rgb(8, 10, 15);
 }
 
@@ -24,7 +24,7 @@ body {
   background-image: url("block-13.png");
   background-size: 60px;
   background-color: var(--darkocean);
-  
+
   /* this lets us vertically and horizontally center everything */
   display: flex;
   align-items: center;
@@ -56,7 +56,7 @@ main {
 
 /*
  * These two sections turn the bulleted list into a centered group of inline blocks.
- */ 
+ */
 ul {
   list-style-type: none;
   padding: 0;
@@ -69,7 +69,7 @@ li {
 
 /*
  * This section makes the links look like bronze buttons.
- */ 
+ */
 a {
   background-color: var(--bronze);
   color: var(--darkbronze);
@@ -77,7 +77,7 @@ a {
   text-decoration: none;
   text-shadow: 0.8px 0.8px 0.5px black;
   font-weight: bold;
-  
+
   border: 5px solid black;
   border-left-color: var(--darkbronze);
   border-top-color: var(--darkbronze);
@@ -85,15 +85,15 @@ a {
 
 /*
  * The links will get lighter when the mouse is over them.
- */ 
+ */
 a:hover {
   filter: brightness(120%);
-} 
+}
 
 /*
  * Don't put space above the top <p> tag, or below the bottom one.
  * It's easier to control the space by styling <main>.
- */ 
+ */
 p:first-of-type {
   margin-top: 0;
 }
